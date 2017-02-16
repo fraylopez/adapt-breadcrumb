@@ -1,0 +1,15 @@
+{
+    "name": "adapt-breadcrumb",
+    "framework": "^2.0.12",
+    "version": "1.0.0",
+    "displayName": "Breadcrumb trail",
+    "extension": "breadcrumb",
+    "description": "An extension to display breadcrumb navigation",
+    "main": "/js/adapt-breadcrumb.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3",
+    "targetAttribute": "_breadcrumb"
+}

@@ -1,0 +1,5 @@
+<div class="breadcrumb-content">
+  {{#each models}}
+    <button class="base breadcrumb-item" data-breadcrumb-id="{{this._id}}">{{this.title}}</button><span class="breadcrumb-separator">{{../separator}}</span>
+  {{/each}}
+</div>

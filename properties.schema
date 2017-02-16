@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_breadcrumb": {
+              "type": "object",
+              "required": false,
+              "legend": "Breadcrumb",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": false,
+                  "title": "Is enabled",
+                  "inputType": {"type": "Boolean", "options": [true, false]},
+                  "validators": [],
+                  "help": "If set to 'true', breadcrumb will be displayed."
+                },
+        				"_separator":{
+        				  "type": "string",
+                          "required": false,
+                          "default": "/",
+                          "title": "Separator",
+                          "inputType": "Text",
+                          "validators": [],
+                          "help": "Separator character for the Breadcrumb"
+        				}
+               }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+    }
+  }
+}
