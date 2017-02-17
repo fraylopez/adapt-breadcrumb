@@ -7,8 +7,11 @@ define([
 
     defaults: {
       "isEnabled": false,
-      'models' : [],
-      'separator' : '/'
+      "divider": "/",
+      "nbUncollapsableCrumbs": 1,
+      "nbFixedCrumbs": 0,
+      "animate" : false,
+	  "models" : []
     }
 
   });

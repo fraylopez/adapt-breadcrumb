@@ -26,16 +26,40 @@
                   "inputType": {"type": "Boolean", "options": [true, false]},
                   "validators": [],
                   "help": "If set to 'true', breadcrumb will be displayed."
+                }, 
+				"_divider": {
+                  "type": "string",
+                  "required": false,
+                  "default": false,
+                  "title": "Divider",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "The element used to separate the crumbs"
                 },
-        				"_separator":{
-        				  "type": "string",
-                          "required": false,
-                          "default": "/",
-                          "title": "Separator",
-                          "inputType": "Text",
-                          "validators": [],
-                          "help": "Separator character for the Breadcrumb"
-        				}
+				"_nbUncollapsableCrumbs":{
+				  "type": "number",
+				  "required": false,
+				  "default": 2,
+				  "title": "Number of uncollapsable navigation elements ",
+				  "inputType": "Number",
+				  "help": "The number of navigation elements which cannot be collapsed when the breadcrumbs is resized"
+				},
+				"_nbFixedCrumbs":{
+				  "type": "number",
+				  "required": false,
+				  "default": 2,
+				  "title": "Number of fixed navigation elements",
+				  "inputType": "Number",
+				  "help": "The number of navigation elements which are always displayed on the left side of the breadcrumbs."
+				},
+				"_animate":{
+				  "type": "bool",
+				  "required": false,
+				  "default": false,
+				  "title": "Animate",
+				  "inputType": {"type": "Boolean", "options": [true, false]},
+				  "help": "Use animation when collapsing/expanding crumbs"
+				}
                }
               }
             }

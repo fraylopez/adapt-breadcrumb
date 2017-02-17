@@ -12,19 +12,16 @@ define([
     klass: '',
 
     events:  {
-        'click .breadcrumb-item': 'onBreadcrumbClick'
+        'click a': 'onBreadcrumbClick'
     },
 
     initialize: function (args) {
       this.klass = args.klass;
-      //this.listenTo(Adapt, 'remove', this.remove);
       this.model.on('change', this.render, this);
-      Adapt.on('device:resize', this.render, this);
       this.render();
     },
 
     render: function () {
-      //this.$el.html (this.model.get('_breadcrumb'));
       var data = this.model.toJSON();
       var template = Handlebars.templates['breadcrumbNavView']
       this.$el.addClass(this.klass);
@@ -36,8 +33,6 @@ define([
     onBreadcrumbClick: function(event) {
         if(event && event.preventDefault) event.preventDefault();
         var targetId = $(event.currentTarget).attr('data-breadcrumb-id');
-        //var $currentComponent = $(currentComponentSelector);
-        //Adapt.navigateTo($currentComponent, { duration:400 });
         var type = this.getModelTypeById(targetId);
         if(!type) return; //shouldn't happen
 
