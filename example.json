@@ -1,7 +1,9 @@
 // To go on in config
 
 "_breadcrumb": {
-    "_isEnabled": true,
-    "_separator": "/"
-
-}
+		"_isEnabled": true,
+		"_divider": "/",
+		"_nbUncollapsableCrumbs": 2,
+		"_nbFixedCrumbs": 0,
+		"_animate": false
+	},
