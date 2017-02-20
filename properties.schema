@@ -29,8 +29,8 @@
                 }, 
 				"_divider": {
                   "type": "string",
-                  "required": false,
-                  "default": false,
+                  "required": true,
+                  "default": "/",
                   "title": "Divider",
                   "inputType": "Text",
                   "validators": [],
@@ -47,7 +47,7 @@
 				"_nbFixedCrumbs":{
 				  "type": "number",
 				  "required": false,
-				  "default": 2,
+				  "default": 0,
 				  "title": "Number of fixed navigation elements",
 				  "inputType": "Number",
 				  "help": "The number of navigation elements which are always displayed on the left side of the breadcrumbs."
