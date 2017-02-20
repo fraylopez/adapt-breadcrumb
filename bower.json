@@ -1,7 +1,7 @@
 {
     "name": "adapt-breadcrumb",
     "framework": "^2.0.12",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "Breadcrumb trail",
     "extension": "breadcrumb",
     "description": "An extension to display breadcrumb navigation",
