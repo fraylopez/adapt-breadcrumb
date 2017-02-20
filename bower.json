@@ -1,11 +1,10 @@
 {
     "name": "adapt-breadcrumb",
+    "repository": "git://github.com/fraylopez/adapt-breadcrumb.git",
     "framework": "^2.0.12",
     "version": "1.0.1",
-	"homepage": "https://github.com/fraylopez/adapt-breadcrumb",
+    "homepage": "https://github.com/fraylopez/adapt-breadcrumb",
     "issues": "https://github.com/fraylopez/adapt-breadcrumb/issues",
-	"repository": "https://github.com/fraylopez/adapt-breadcrumb.git",
-	
     "displayName": "Breadcrumb trail",
     "extension": "breadcrumb",
     "description": "An extension to display breadcrumb navigation",
