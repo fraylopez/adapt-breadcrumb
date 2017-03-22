@@ -8,20 +8,27 @@
   height: 2em;
   z-index: 500;
   background:  @primary-color;
+ 
 
 	ul{
 		font-family: @font-family;
         font-size: @sub-title-font-size;
 		line-height: 160%;
+		margin-left: 10px;
 		
 		li{
 			color: @white;
+			margin-left:0;
+			
 			a{
 				color: @white !important;
 				cursor: pointer;
 			}
 			:last-child{
 				cursor: default;
+			}
+			.divider{
+				color: @white !important;
 			}
 		}
 		
