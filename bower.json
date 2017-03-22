@@ -2,7 +2,7 @@
     "name": "adapt-breadcrumb",
     "repository": "git://github.com/fraylopez/adapt-breadcrumb.git",
     "framework": "^2.0.12",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "homepage": "https://github.com/fraylopez/adapt-breadcrumb",
     "issues": "https://github.com/fraylopez/adapt-breadcrumb/issues",
     "displayName": "Breadcrumb trail",
