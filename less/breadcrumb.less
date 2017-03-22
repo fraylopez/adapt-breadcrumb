@@ -5,18 +5,29 @@
   
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 2em;
   z-index: 500;
   background:  @primary-color;
 
-    a,
-    .divider {
-        font-family: @font-family;
+	ul{
+		font-family: @font-family;
         font-size: @sub-title-font-size;
-        color: @white !important;
-        line-height: 160%;
-        cursor: pointer;
-    }
+		line-height: 160%;
+		
+		li{
+			color: @white;
+			a{
+				color: @white !important;
+				cursor: pointer;
+			}
+			:last-child{
+				cursor: default;
+			}
+		}
+		
+		
+	}
+   
     
     
 }
