@@ -1,7 +1,11 @@
 <div class="rcrumbs" id="breadcrumbs">
     <ul>
         {{#each models}}
-        <li><a data-breadcrumb-id="{{this._id}}">{{this.title}}</a><span class="divider">{{../divider}}</span></li>
+			{{#unless @last}}
+				<li><a data-breadcrumb-id="{{this._id}}">{{this.displayTitle}}</a><span class="divider">{{../divider}}</span></li>
+			{{else}}
+				<li><span data-breadcrumb-id="{{this._id}}">{{this.displayTitle}}</span></li>
+			{{/unless}}
         {{/each}}
     </ul>
 </div>
